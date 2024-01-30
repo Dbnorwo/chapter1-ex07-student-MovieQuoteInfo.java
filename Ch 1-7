@@ -1,0 +1,35 @@
+public class MovieQuoteInfo {
+    private String quote;
+    private String movie;
+    private String character;
+    private int year;
+
+    // Constructor
+    public MovieQuoteInfo(String quote, String movie, String character, int year) {
+        this.quote = quote;
+        this.movie = movie;
+        this.character = character;
+        this.year = year;
+    }
+
+    // Display movie quote information
+    public void displayInfo() {
+        System.out.println(quote);
+        System.out.println("said by " + character);
+        System.out.println("in the movie " + movie);
+        System.out.println("in " + year + ".");
+    }
+
+    public static void main(String[] args) {
+        // Replace the values with your favorite movie quote information
+        MovieQuoteInfo myFavoriteQuote = new MovieQuoteInfo(
+                "Rosebud",
+                "Citizen Kane",
+                "Charles Foster Kane",
+                1941
+        );
+
+        // Display the movie quote information
+        myFavoriteQuote.displayInfo();
+    }
+}
